@@ -4,41 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>পারিজাতের পাতা | সাহিত্য ও সৃজনশীলতা</title>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&family=Noto+Serif+Bengali:wght@400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">পারিজাতের পাতা</div>
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">নীড়</a></li>
-            <li><a href="#stories">গল্প</a></li>
-            <li><a href="#poems">কবিতা</a></li>
-            <li><a href="#reviews">রিভিউ</a></li>
-            <li><a href="#contact" class="btn-contact">যোগাযোগ</a></li>
-        </ul>
-    </nav>
-
     <header class="hero" id="home">
         <div class="overlay"></div>
         <div class="hero-content">
             <div class="profile-frame">
-                <img src="profile.jpeg" alt="Profile" class="profile-pic"> </div>
-            <h1 class="animate-text">পারিজাতের পাতা</h1>
+                <img src="profile.jpg" alt="Profile" class="profile-pic">
+            </div>
+            
+            <h1 class="main-title">পারিজাতের পাতা</h1>
             <p class="tagline">শব্দে মানুষ, <span class="highlight">গল্পে জীবন</span></p>
+            
             <div class="hero-btns">
                 <a href="#latest" class="btn btn-primary">লেখা পড়ুন</a>
-                <a href="https://www.facebook.com/" target="_blank" class="btn btn-secondary"><i class="fab fa-facebook-f"></i> ফলো করুন</a>
+                <a href="#contact" class="btn btn-outline">যোগাযোগ</a>
             </div>
         </div>
-        <div class="scroll-down">
+
+        <a href="#latest" class="scroll-down">
             <i class="fas fa-chevron-down"></i>
-        </div>
+        </a>
     </header>
 
     <main class="container" id="latest">
@@ -51,67 +41,53 @@
         <div class="blog-grid">
             <article class="blog-card">
                 <div class="card-img-holder">
-                    <img src="https://images.unsplash.com/photo-1474932431740-beb56490582f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Story">
+                    <img src="https://images.unsplash.com/photo-1474932431740-beb56490582f?w=500" alt="Story">
                     <span class="badge">ছোটগল্প</span>
                 </div>
                 <div class="card-content">
                     <h3>অমীমাংসিত বিকেল</h3>
-                    <p>বিকেলের রোদটা বারান্দায় এসে পড়েছিল, ঠিক যেন পুরনো দিনের স্মৃতির মতো এক দীর্ঘশ্বাস...</p>
-                    <div class="card-footer">
-                        <span class="date"><i class="far fa-calendar-alt"></i> ৩ মার্চ, ২০২৬</span>
-                        <a href="#" class="read-more">পড়ুন <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <p>বিকেলের রোদটা বারান্দায় এসে পড়েছিল, ঠিক যেন পুরনো দিনের স্মৃতির মতো...</p>
+                    <a href="#" class="read-more">পড়ুন &rarr;</a>
                 </div>
             </article>
 
             <article class="blog-card">
                 <div class="card-img-holder">
-                    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Poem">
+                    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=500" alt="Poem">
                     <span class="badge">কবিতা</span>
                 </div>
                 <div class="card-content">
                     <h3>শহরের শেষ ট্রাম</h3>
-                    <p>শহরের বুকে এখন আর ট্রামের ঘণ্টা বাজে না, তবুও স্মৃতির পাতায় রয়ে গেছে সেই শব্দ...</p>
-                    <div class="card-footer">
-                        <span class="date"><i class="far fa-calendar-alt"></i> ২৮ ফেব্রুয়ারি, ২০২৬</span>
-                        <a href="#" class="read-more">পড়ুন <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <p>শহরের বুকে এখন আর ট্রামের ঘণ্টা বাজে না, তবুও স্মৃতির পাতায়...</p>
+                    <a href="#" class="read-more">পড়ুন &rarr;</a>
                 </div>
             </article>
 
             <article class="blog-card">
                 <div class="card-img-holder">
-                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Review">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500" alt="Review">
                     <span class="badge">বুক রিভিউ</span>
                 </div>
                 <div class="card-content">
                     <h3>অরণ্যের দিনরাত্রি : ফিরে দেখা</h3>
-                    <p>সুনীল গঙ্গোপাধ্যায়ের এই কালজয়ী উপন্যাসটি আজও আমাদের ভাবায়, নতুন করে বাঁচতে শেখায়...</p>
-                    <div class="card-footer">
-                        <span class="date"><i class="far fa-calendar-alt"></i> ১৫ ফেব্রুয়ারি, ২০২৬</span>
-                        <a href="#" class="read-more">পড়ুন <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <p>সুনীল গঙ্গোপাধ্যায়ের এই কালজয়ী উপন্যাসটি আজও আমাদের ভাবায়...</p>
+                    <a href="#" class="read-more">পড়ুন &rarr;</a>
                 </div>
             </article>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-overlay"></div>
+    <footer id="contact">
         <div class="footer-content">
-            <h2 class="footer-logo">পারিজাতের পাতা</h2>
-            <p>সাহিত্যের আঙিনায় আপনাকে স্বাগতম।</p>
+            <h3>পারিজাতের পাতা</h3>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="copyright">&copy; ২০২৬ পারিজাতের পাতা | ডিজাইন ও ভাবনায় আপনি</p>
+            <p>&copy; ২০২৬ সর্বস্বত্ব সংরক্ষিত</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>

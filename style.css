@@ -1,0 +1,240 @@
+/* General Setup */
+:root {
+    --primary-color: #3E2723; /* Dark Brown (Text/Headers) */
+    --accent-color: #8D6E63; /* Lighter Brown (Buttons/Links) */
+    --bg-color: #FDFBF7; /* Creamy White (Paper feel) */
+    --card-bg: #FFFFFF;
+    --text-color: #4E342E;
+    --gold: #D4AF37; /* Elegant touch */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind Siliguri', sans-serif; /* Bengali Friendly Font */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Noto Serif Bengali', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section with Background style matching your FB Cover */
+.hero {
+    /* Use a dark linear gradient over the image to make text pop */
+    background: linear-gradient(rgba(62, 39, 35, 0.8), rgba(62, 39, 35, 0.6)), url('your-cover-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-family: 'Noto Serif Bengali', serif;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #EFEBE9;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: var(--gold);
+    color: #333;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+/* Blog Section */
+.container {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 10px auto 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 200px;
+    background-color: #ddd; /* Replace with actual images */
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.category {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card-content h3 {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: auto;
+}
+
+.socials {
+    margin: 1.5rem 0;
+}
+
+.socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Mobile Responsive */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 15px 0;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
